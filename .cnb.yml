@@ -17,7 +17,7 @@ $:
 
 # .cnb.yml
 
-main:
+master:
   push:
     - imports:
         - https://cnb.cool/eyre921/secret/-/blob/main/edgeone-pages-env.yml
@@ -30,9 +30,9 @@ main:
         - name: Build Site
           script:
             - pnpm i
-            - pnpm docs:build
+            - pnpm build
 
         - name: Deploy to EdgeOne Pages
           script:
             - npm install -g edgeone 
-            - npx edgeone pages deploy ./docs/.vitepress/dist -n vibe-vibe --force -t $EDGEONE_API_TOKEN
+            - npx edgeone pages deploy ./docs/.vitepress/dist -n vibe-vibe-dev --force -t $EDGEONE_API_TOKEN
