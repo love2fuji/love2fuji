@@ -3,7 +3,7 @@ layout: home
 hero:
   name: "Vibe Coding"
   text: "人人都能学会的 AI 编程"
-  tagline: "不写代码，也能做产品。从零基础到全栈开发，让 AI 成为你的编程搭档."
+  tagline: "不写代码，也能做产品。从零基础到全栈开发，让 AI 成为你的编程搭档"
   image:
     src: /logo.png
     alt: Vibe Coding
@@ -14,12 +14,6 @@ hero:
     - theme: alt
       text: 有基础进阶
       link: /Advanced/
-    - theme: alt
-      text: 动手实践
-      link: /Practice/
-    - theme: alt
-      text: 优质资源
-      link: /Articles/
 
 features:
   - title: 零基础友好
@@ -28,12 +22,12 @@ features:
     details: 学会"指挥 AI 写代码"而不是"自己写代码"，用自然语言描述需求，让 AI 帮你实现
   - title: MVP 思维
     details: 掌握"最小可行产品"理念，用最少的时间验证你的想法，避免功能蔓延的陷阱
-  - title: 实践驱动
-    details: 理论结合实战，跟着真实项目动手做，从简单工具到全栈应用逐步进阶
+  - title: 现代技术栈
+    details: 进阶篇基于 Next.js + TypeScript + Prisma，学习企业级全栈开发最佳实践
   - title: 安全意识
     details: 从第一天就建立安全底线意识，学会保护用户数据和避免常见安全漏洞
-  - title: 完整生态
-    details: 基础入门、进阶实战、项目实践、优质资源，四大模块形成学习闭环
+  - title: 渐进式学习
+    details: 基础篇建立认知，进阶篇深入实战。两条路径，适合不同阶段的你
 ---
 
 <style>
@@ -139,7 +133,7 @@ features:
 ::: warning 内部预览版本
 - 本版本为**内部预览版**，并非正式发行版本
 - 正式版本需要等待后续对每一个章节进行深度优化、补充互动教学内容、以及完善实战练习环节
-- 如发现问题欢迎通过 [GitHub Issues](https://github.com/datawhalechina/vibe-vibe/issues) 反馈
+- 如发现问题欢迎通过 [GitHub Issues](https://github.com/Eyre921/awesone-vibe-coding-tutorial/issues) 反馈
 :::
 
 ::: tip 正式版预告：Web 互动教学
@@ -192,7 +186,7 @@ features:
 本项目欢迎社区贡献：
 
 - 在页面底部评论区反馈问题
-- 提交 [GitHub Issues](https://github.com/datawhalechina/vibe-vibe/issues) 
+- 提交 [GitHub Issues](https://github.com/Eyre921/awesone-vibe-coding-tutorial/issues) 
 - 提交 Pull Request 完善内容
 
 <div style="text-align: center; margin: 3rem 0;">

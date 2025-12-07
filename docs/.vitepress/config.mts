@@ -65,7 +65,6 @@ export default withMermaid(defineConfig({
           { text: '3. 技术：从想法到产品', link: '/Basic/03-technique/' },
           { text: '4. 从 0 到 1 实战', link: '/Basic/04-practice-0-to-1/' },
           { text: '5. 进阶技能', link: '/Basic/05-advanced/' },
-          { text: '6. 学习路径', link: '/Basic/06-learning-paths/' },
           { text: '附录', link: '/Basic/99-appendix/' },
           { text: '结语', link: '/Basic/100-epilogue/' },
           { text: '下部预告', link: '/Basic/101-next-part/' },
@@ -92,13 +91,13 @@ export default withMermaid(defineConfig({
       { 
         text: '实践篇', 
         items: [
-          { text: '基础：文科生/商科生项目', link: '/Practice/01-for-liberal-arts/' },
-          { text: '基础：理工科学生项目', link: '/Practice/02-for-stem/' },
-          { text: '基础：职场人士项目', link: '/Practice/03-for-professionals/' },
-          { text: '进阶：核心技能', link: '/Practice/10-core-skills/' },
-          { text: '进阶：AI Agent 开发', link: '/Practice/11-ai-agents/' },
-          { text: '进阶：全栈项目实战', link: '/Practice/12-fullstack-projects/' },
-          { text: '进阶：工具与效率', link: '/Practice/13-tools-integration/' },
+          { text: '文科生/商科生项目', link: '/Practice/01-for-liberal-arts/' },
+          { text: '理工科学生项目', link: '/Practice/02-for-stem/' },
+          { text: '职场人士项目', link: '/Practice/03-for-professionals/' },
+          { text: '核心技能', link: '/Practice/10-core-skills/' },
+          { text: 'AI Agent 开发', link: '/Practice/11-ai-agents/' },
+          { text: '全栈项目实战', link: '/Practice/12-fullstack-projects/' },
+          { text: '工具与效率', link: '/Practice/13-tools-integration/' },
         ]
       },
       { 
@@ -131,8 +130,7 @@ export default withMermaid(defineConfig({
         'Advanced/08-workflow', 'Advanced/09-testing', 'Advanced/10-deploy', 'Advanced/11-review', 'Advanced/12-advanced',
         'Practice/01-for-liberal-arts', 'Practice/02-for-stem', 'Practice/03-for-professionals',
         'Practice/10-core-skills', 'Practice/11-ai-agents', 'Practice/12-fullstack-projects', 'Practice/13-tools-integration',
-        'Articles/01-company-blogs', 'Articles/02-podcasts', 'Articles/03-research-reports', 
-        'Articles/04-newsletters', 'Articles/05-communities'
+        'Articles/01-company-blogs', 'Articles/02-podcasts', 'Articles/03-research-reports', 'Articles/04-newsletters', 'Articles/05-communities'
       ],
       
       collapsed: true,
@@ -140,7 +138,7 @@ export default withMermaid(defineConfig({
     }),
 
     // editLink: {
-    //   pattern: 'https://github.com/datawhalechina/vibe-vibe/edit/main/docs/:path',
+    //   pattern: 'https://github.com/Eyre921/awesone-vibe-coding-tutorial/edit/main/docs/:path',
     //   text: '在 GitHub 上编辑此页'
     // },
 
@@ -189,7 +187,7 @@ export default withMermaid(defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/datawhalechina/vibe-vibe' }
+      { icon: 'github', link: 'https://github.com/Eyre921/awesone-vibe-coding-tutorial' }
     ]
   }
 }))
