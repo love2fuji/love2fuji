@@ -155,7 +155,7 @@ function buildBreadcrumbList(urlPath: string, fullUrl: string): Record<string, u
 
 
 export default withMermaid(defineConfig({
-  base: process.env.BASE || '/',
+  base: '/',  // GitHub User Page (username.github.io) requires base to be '/'
   lang: 'zh-CN',
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
@@ -531,7 +531,7 @@ export default withMermaid(defineConfig({
     }),
 
     editLink: {
-      pattern: 'https://github.com/datawhalechina/vibe-vibe/edit/main/docs/:path',
+      pattern: 'https://github.com/love2fuji/love2fuji.github.io/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页'
     },
 

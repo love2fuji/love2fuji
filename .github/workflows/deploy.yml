@@ -34,10 +34,8 @@ jobs:
       - name: Build
         run: pnpm run build
         env:
-            # Important: Set the BASE URL to /repo-name/
-            # GitHub Actions exposes the repo name in GITHUB_REPOSITORY (e.g. user/repo)
-            # We take the repo name part.
-            BASE: /${{ github.event.repository.name }}/
+            # For User Pages (username.github.io), BASE should be /
+            BASE: /
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
