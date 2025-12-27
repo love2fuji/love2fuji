@@ -17,8 +17,8 @@ function normalizeSiteUrl(url: string): string {
 
 function resolveSiteUrl(): string {
   const raw =
-    process.env.SITE_URL || 
-    process.env.EDGEONE_PAGES_URL || 
+    process.env.SITE_URL ||
+    process.env.EDGEONE_PAGES_URL ||
     process.env.DEPLOY_URL ||
     process.env.URL ||
     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : '') ||
@@ -155,13 +155,14 @@ function buildBreadcrumbList(urlPath: string, fullUrl: string): Record<string, u
 
 
 export default withMermaid(defineConfig({
+  base: process.env.BASE || '/',
   lang: 'zh-CN',
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
-  
+
   // 排除 docs/docs 目录不构建
   srcExclude: ['**/docs/**'],
-  
+
   head: [
     ['meta', { name: 'baidu-site-verification', content: 'codeva-DyDGMBlEJg' }],
     ['meta', { name: 'keywords', content: 'Vibe Coding, 全栈开发, Next.js, TypeScript, React, Prisma, AI编程, Cursor, Claude' }],
@@ -435,7 +436,7 @@ export default withMermaid(defineConfig({
   themeConfig: {
     logo: '/logo.png',
     siteTitle: 'Vibe Vibe',
-    
+
     nav: [
       { text: '首页', link: '/' },
 
@@ -503,18 +504,18 @@ export default withMermaid(defineConfig({
         ]
       },
     ],
-    
+
     // 核心：自动生成侧边栏
     sidebar: generateSidebar({
       documentRootPath: 'docs',
       useTitleFromFrontmatter: true,
       useTitleFromFileHeading: true,
-      useFolderTitleFromIndexFile: true, 
+      useFolderTitleFromIndexFile: true,
       useFolderLinkFromIndexFile: true,
       hyphenToSpace: true,
       sortMenusByFrontmatterOrder: true,
       frontmatterOrderDefaultValue: 9999,
-      
+
       manualSortFileNameByPriority: [
         'Basic', 'Advanced', 'Advanced-old', 'Practice', 'Articles',
         'Basic/00-preface', 'Basic/01-awakening', 'Basic/02-mindset', 'Basic/03-technique',
@@ -524,15 +525,15 @@ export default withMermaid(defineConfig({
         'Practice/10-core-skills', 'Practice/11-ai-agents', 'Practice/12-fullstack-projects', 'Practice/13-tools-integration',
         'Articles/01-company-blogs', 'Articles/02-podcasts', 'Articles/03-research-reports', 'Articles/04-newsletters', 'Articles/05-communities'
       ],
-      
+
       collapsed: true,
-      excludePattern: ['public', 'assets', 'docs'], 
+      excludePattern: ['public', 'assets', 'docs'],
     }),
 
-    // editLink: {
-    //   pattern: 'https://github.com/Eyre921/awesone-vibe-coding-tutorial/edit/main/docs/:path',
-    //   text: '在 GitHub 上编辑此页'
-    // },
+    editLink: {
+      pattern: 'https://github.com/datawhalechina/vibe-vibe/edit/main/docs/:path',
+      text: '在 GitHub 上编辑此页'
+    },
 
     lastUpdated: {
       text: '最后更新于',
