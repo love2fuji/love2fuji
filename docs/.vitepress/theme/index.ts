@@ -87,26 +87,14 @@ const PwaInstallButton = defineComponent({
 
 export default {
   extends: DefaultTheme,
-  
+
   // 1. 布局扩展：注入 Giscus 评论
   Layout: () => {
     const route = useRoute()
     const { frontmatter, isDark } = useData();
-    
+
     return h(DefaultTheme.Layout, null, {
-      'layout-top': () => {
-        return h('div', {
-          class: 'info-banner',
-          style: {
-            background: '#e6a23c',
-            color: '#fff',
-            padding: '8px',
-            textAlign: 'center',
-            fontSize: '14px',
-            lineHeight: '1.5'
-          }
-        }, '抢先预览版，内容调整中，不代表最终品质')
-      },
+
       'doc-after': () => {
         const children: VNode[] = [
           h('div', { class: 'feedback-tip' }, [
@@ -170,7 +158,7 @@ export default {
   // 2. 增强功能：图片放大
   setup() {
     const route = useRoute()
-    
+
     const initZoom = () => {
       // 给主要内容区的图片添加放大功能，排除 logo 等
       // background: var(--vp-c-bg) 确保背景色适应深色模式
@@ -179,7 +167,7 @@ export default {
 
     onMounted(() => {
       initZoom()
-      
+
       // 动态计算 Banner 高度并设置 CSS 变量
       const updateBannerHeight = () => {
         const banner = document.querySelector('.info-banner')
@@ -188,7 +176,7 @@ export default {
           document.documentElement.style.setProperty('--vp-layout-top-height', `${height}px`)
         }
       }
-      
+
       updateBannerHeight()
       window.addEventListener('resize', updateBannerHeight)
     })
