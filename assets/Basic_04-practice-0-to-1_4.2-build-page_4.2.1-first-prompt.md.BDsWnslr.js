@@ -1,0 +1,61 @@
+import{_ as s,c as n,o as t,a3 as p}from"./chunks/framework.CUcrqFol.js";const u=JSON.parse('{"title":"4.2.1 用第三章框架写第一个 Prompt","description":"4.2.1 用第三章框架写第一个 Prompt **本步目标**：把 4.1 节的\\"项目启动卡\\"转化为 AI 能理解的 Prompt 从项目启动卡到 Prompt 在 4.1 节，我们整理了小李项目的「项目启动卡」。现在要把它转化为 Prompt，让 AI 帮我们生成代码。 转化的逻辑： | 项目启动卡内容 | 对应","frontmatter":{"title":"4.2.1 用第三章框架写第一个 Prompt","order":2},"headers":[],"relativePath":"Basic/04-practice-0-to-1/4.2-build-page/4.2.1-first-prompt.md","filePath":"Basic/04-practice-0-to-1/4.2-build-page/4.2.1-first-prompt.md","lastUpdated":1765094268000}'),l={name:"Basic/04-practice-0-to-1/4.2-build-page/4.2.1-first-prompt.md"};function e(i,a,o,d,r,c){return t(),n("div",null,[...a[0]||(a[0]=[p(`<h1 id="_4-2-1-用第三章框架写第一个-prompt" tabindex="-1">4.2.1 用第三章框架写第一个 Prompt <a class="header-anchor" href="#_4-2-1-用第三章框架写第一个-prompt" aria-label="Permalink to &quot;4.2.1 用第三章框架写第一个 Prompt&quot;">​</a></h1><blockquote><p><strong>本步目标</strong>：把 4.1 节的&quot;项目启动卡&quot;转化为 AI 能理解的 Prompt</p></blockquote><h2 id="从项目启动卡到-prompt" tabindex="-1">从项目启动卡到 Prompt <a class="header-anchor" href="#从项目启动卡到-prompt" aria-label="Permalink to &quot;从项目启动卡到 Prompt&quot;">​</a></h2><p>在 4.1 节，我们整理了小李项目的「项目启动卡」。现在要把它转化为 Prompt，让 AI 帮我们生成代码。</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>项目启动卡                         Prompt</span></span>
+<span class="line"><span>┌──────────────┐                ┌──────────────┐</span></span>
+<span class="line"><span>│ 项目名称      │                │ Situation    │</span></span>
+<span class="line"><span>│ 目标用户      │  ──转化──→     │ Challenge    │</span></span>
+<span class="line"><span>│ 核心功能      │                │ Audience     │</span></span>
+<span class="line"><span>│ 明确不做      │                │ Format       │</span></span>
+<span class="line"><span>│ 技术约束      │                │ Foundations  │</span></span>
+<span class="line"><span>└──────────────┘                └──────────────┘</span></span></code></pre></div><p>转化的逻辑：</p><table tabindex="0"><thead><tr><th>项目启动卡内容</th><th>对应 Prompt 位置</th><th>作用</th></tr></thead><tbody><tr><td>项目名称 + 目标用户</td><td>Situation（情境）</td><td>告诉 AI 你在做什么</td></tr><tr><td>核心功能列表</td><td>Challenge（挑战）</td><td>告诉 AI 当前要做什么</td></tr><tr><td>你是谁</td><td>Audience（受众）</td><td>让 AI 调整代码复杂度</td></tr><tr><td>期望输出格式</td><td>Format（格式）</td><td>让 AI 知道给你什么</td></tr><tr><td>明确不做 + 技术约束</td><td>Foundations（基础）</td><td>告诉 AI 边界在哪</td></tr></tbody></table><h2 id="三种-prompt-版本" tabindex="-1">三种 Prompt 版本 <a class="header-anchor" href="#三种-prompt-版本" aria-label="Permalink to &quot;三种 Prompt 版本&quot;">​</a></h2><p>根据你的时间和需求，可以选择不同详细程度的 Prompt。</p><h3 id="版本一-最简版-赶时间用" tabindex="-1">版本一：最简版（赶时间用） <a class="header-anchor" href="#版本一-最简版-赶时间用" aria-label="Permalink to &quot;版本一：最简版（赶时间用）&quot;">​</a></h3><p>如果你已经熟悉了这个流程，或者只是想快速看到效果：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>帮我做一个待办清单网页的静态页面。</span></span>
+<span class="line"><span>包含：标题、输入框、添加按钮、任务列表（带完成和删除按钮）。</span></span>
+<span class="line"><span>风格简约现代，要能在手机上正常显示。</span></span>
+<span class="line"><span>先不需要功能，只要页面样式。用 HTML + CSS，不用任何框架。</span></span></code></pre></div><p>这个版本大约 70 字，能覆盖最核心的信息。</p><h3 id="版本二-标准版-推荐日常使用" tabindex="-1">版本二：标准版（推荐日常使用） <a class="header-anchor" href="#版本二-标准版-推荐日常使用" aria-label="Permalink to &quot;版本二：标准版（推荐日常使用）&quot;">​</a></h3><p>使用第三章的 S.C.F. 精简框架：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>【背景】</span></span>
+<span class="line"><span>我正在做一个个人待办清单网页，帮助管理日常任务。</span></span>
+<span class="line"><span>我是编程零基础的初学者。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>【任务】</span></span>
+<span class="line"><span>请生成待办清单的静态页面，包含以下元素：</span></span>
+<span class="line"><span>- 页面标题：&quot;我的待办清单&quot;</span></span>
+<span class="line"><span>- 一个输入框，用于输入新任务</span></span>
+<span class="line"><span>- 一个&quot;添加&quot;按钮</span></span>
+<span class="line"><span>- 任务列表区域，先用 3 条假数据展示样式</span></span>
+<span class="line"><span>- 每个任务有&quot;完成&quot;按钮和&quot;删除&quot;按钮</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>【约束】</span></span>
+<span class="line"><span>- 只需要静态页面，暂时不需要任何功能</span></span>
+<span class="line"><span>- 使用纯 HTML + CSS，不使用任何框架</span></span>
+<span class="line"><span>- 现代简约风格，清新配色</span></span>
+<span class="line"><span>- 响应式设计，手机上也能正常显示</span></span>
+<span class="line"><span>- 代码加上必要的中文注释</span></span></code></pre></div><h3 id="版本三-完整版-第一次使用建议" tabindex="-1">版本三：完整版（第一次使用建议） <a class="header-anchor" href="#版本三-完整版-第一次使用建议" aria-label="Permalink to &quot;版本三：完整版（第一次使用建议）&quot;">​</a></h3><p>使用 S.C.A.F.F. 全要素框架，给 AI 最充分的上下文：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>【Situation - 情境】</span></span>
+<span class="line"><span>我是一个编程零基础的初学者，正在学习用 AI 做一个个人待办清单网页。</span></span>
+<span class="line"><span>这是我的第一个 AI 编程项目。</span></span>
+<span class="line"><span>目标用户是像我一样容易忘事的职场新人，需要一个简单的任务管理工具。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>【Challenge - 挑战】</span></span>
+<span class="line"><span>请帮我生成待办清单的静态页面，包含以下元素：</span></span>
+<span class="line"><span>1. 页面标题：&quot;我的待办清单&quot;</span></span>
+<span class="line"><span>2. 输入区域：</span></span>
+<span class="line"><span>   - 一个输入框（用于输入新任务）</span></span>
+<span class="line"><span>   - 一个&quot;添加&quot;按钮</span></span>
+<span class="line"><span>3. 任务列表区域：</span></span>
+<span class="line"><span>   - 先用 3 条假数据展示样式（如：&quot;完成项目报告&quot;、&quot;买牛奶&quot;、&quot;给妈妈打电话&quot;）</span></span>
+<span class="line"><span>   - 每个任务显示任务内容</span></span>
+<span class="line"><span>   - 每个任务右侧有&quot;完成&quot;按钮和&quot;删除&quot;按钮</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>【Audience - 受众】</span></span>
+<span class="line"><span>- 代码将由我这个初学者阅读和修改</span></span>
+<span class="line"><span>- 请保持代码简单易懂</span></span>
+<span class="line"><span>- 在关键位置添加中文注释，帮助我理解代码结构</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>【Format - 格式】</span></span>
+<span class="line"><span>请生成一个完整的 HTML 文件，包含：</span></span>
+<span class="line"><span>- HTML 结构</span></span>
+<span class="line"><span>- 内嵌的 CSS 样式（写在 &lt;style&gt; 标签里）</span></span>
+<span class="line"><span>- 文件可以直接在浏览器中打开查看效果</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>【Foundations - 基础约束】</span></span>
+<span class="line"><span>- 只做静态页面，暂时不需要 JavaScript 功能</span></span>
+<span class="line"><span>- 不使用任何外部框架或库（如 Bootstrap、Tailwind）</span></span>
+<span class="line"><span>- 设计风格：现代简约，参考苹果或 Notion 的设计语言</span></span>
+<span class="line"><span>- 配色清新，主色调可以用蓝色或绿色系</span></span>
+<span class="line"><span>- 响应式设计：在手机（宽度 375px）和电脑上都能正常显示</span></span>
+<span class="line"><span>- 页面整体居中显示，最大宽度 500px</span></span></code></pre></div><h2 id="为什么要告诉-ai-你是初学者" tabindex="-1">为什么要告诉 AI 你是初学者？ <a class="header-anchor" href="#为什么要告诉-ai-你是初学者" aria-label="Permalink to &quot;为什么要告诉 AI 你是初学者？&quot;">​</a></h2><p>你可能注意到，每个版本都提到了&quot;我是初学者&quot;。这不是谦虚，而是一个重要的策略：</p><table tabindex="0"><thead><tr><th>不说&quot;初学者&quot;</th><th>说了&quot;初学者&quot;</th></tr></thead><tbody><tr><td>AI 可能使用高级语法和技巧</td><td>AI 会使用基础、直观的写法</td></tr><tr><td>代码可能没有注释</td><td>AI 会主动添加解释性注释</td></tr><tr><td>变量名可能很简短</td><td>AI 会使用更具描述性的命名</td></tr><tr><td>遇到问题你可能看不懂</td><td>代码更容易阅读和调试</td></tr></tbody></table><p>这个小技巧能让 AI 生成的代码更适合你当前的水平。</p><h2 id="描述方式对比-模糊-vs-具体" tabindex="-1">描述方式对比：模糊 vs 具体 <a class="header-anchor" href="#描述方式对比-模糊-vs-具体" aria-label="Permalink to &quot;描述方式对比：模糊 vs 具体&quot;">​</a></h2><p>写 Prompt 时，越具体越好。看看这些对比：</p><table tabindex="0"><thead><tr><th>方面</th><th>模糊描述（避免）</th><th>具体描述（推荐）</th></tr></thead><tbody><tr><td>颜色</td><td>好看的颜色</td><td>主色调用蓝色系，如 #4F46E5</td></tr><tr><td>布局</td><td>居中显示</td><td>页面最大宽度 500px，水平居中</td></tr><tr><td>风格</td><td>现代风格</td><td>参考苹果官网的极简风格，圆角卡片</td></tr><tr><td>按钮</td><td>添加一些按钮</td><td>每个任务右侧有&quot;完成&quot;和&quot;删除&quot;两个按钮</td></tr><tr><td>数据</td><td>展示一些任务</td><td>用 3 条假数据，如&quot;完成项目报告&quot;等</td></tr></tbody></table><p>为什么具体描述更好？因为 AI 面对模糊描述时只能&quot;猜&quot;，而具体描述让 AI 知道你到底想要什么。</p><h2 id="检查你的-prompt" tabindex="-1">检查你的 Prompt <a class="header-anchor" href="#检查你的-prompt" aria-label="Permalink to &quot;检查你的 Prompt&quot;">​</a></h2><p>在发送之前，用这个清单检查一下：</p><ul><li>[ ] 说明了项目背景（做什么、给谁用）？</li><li>[ ] 列出了要包含的页面元素？</li><li>[ ] 指定了技术约束（HTML + CSS，不用框架）？</li><li>[ ] 说明了设计风格和配色偏好？</li><li>[ ] 提到了响应式需求？</li><li>[ ] 告诉 AI 你是初学者，需要注释？</li></ul><h2 id="选择哪个版本" tabindex="-1">选择哪个版本？ <a class="header-anchor" href="#选择哪个版本" aria-label="Permalink to &quot;选择哪个版本？&quot;">​</a></h2><table tabindex="0"><thead><tr><th>你的情况</th><th>建议使用</th></tr></thead><tbody><tr><td>第一次跟着教程做</td><td><strong>完整版</strong>，获得最好的结果</td></tr><tr><td>已经做过一次，想快速复习</td><td>标准版</td></tr><tr><td>已经很熟练，想快速验证想法</td><td>最简版</td></tr></tbody></table><div class="tip custom-block"><p class="custom-block-title">建议</p><p>如果这是你第一次做 AI 编程项目，建议使用完整版。多花 2 分钟写 Prompt，能省下后面很多调整时间。</p></div><h2 id="本步检查点" tabindex="-1">本步检查点 <a class="header-anchor" href="#本步检查点" aria-label="Permalink to &quot;本步检查点&quot;">​</a></h2><ul><li>[ ] 选择了适合自己的 Prompt 版本</li><li>[ ] 复制好了 Prompt，准备发送给 AI</li></ul><p>→ <a href="./4.2.2-generate-static.html">4.2.2 生成静态页面</a></p>`,36)])])}const b=s(l,[["render",e]]);export{u as __pageData,b as default};

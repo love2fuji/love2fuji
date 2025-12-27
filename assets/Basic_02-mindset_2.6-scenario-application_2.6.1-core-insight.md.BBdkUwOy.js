@@ -1,0 +1,73 @@
+import{_ as a,c as n,o as p,a3 as t}from"./chunks/framework.CUcrqFol.js";const b=JSON.parse('{"title":"2.6.1 核心洞见：一套思维，多种场景","description":"2.6.1 核心洞见：一套思维，多种场景 为什么思维工具不是「产品经理专用」 前面五节讲的思维工具，名字听起来都很「产品化」：JTBD、MVP、用户画像、PRD…… 但如果你仔细看它们的本质，会发现一个共同点： **它们都在解决同一个问题——如何把模糊的想法变成清晰的定义。** | 思维工具 | 表面看是 | 本质是","frontmatter":{"title":"2.6.1 核心洞见：一套思维，多种场景"},"headers":[],"relativePath":"Basic/02-mindset/2.6-scenario-application/2.6.1-core-insight.md","filePath":"Basic/02-mindset/2.6-scenario-application/2.6.1-core-insight.md","lastUpdated":1765094268000}'),e={name:"Basic/02-mindset/2.6-scenario-application/2.6.1-core-insight.md"};function l(d,s,i,r,c,o){return p(),n("div",null,[...s[0]||(s[0]=[t(`<h1 id="_2-6-1-核心洞见-一套思维-多种场景" tabindex="-1">2.6.1 核心洞见：一套思维，多种场景 <a class="header-anchor" href="#_2-6-1-核心洞见-一套思维-多种场景" aria-label="Permalink to &quot;2.6.1 核心洞见：一套思维，多种场景&quot;">​</a></h1><h2 id="为什么思维工具不是「产品经理专用」" tabindex="-1">为什么思维工具不是「产品经理专用」 <a class="header-anchor" href="#为什么思维工具不是「产品经理专用」" aria-label="Permalink to &quot;为什么思维工具不是「产品经理专用」&quot;">​</a></h2><p>前面五节讲的思维工具，名字听起来都很「产品化」：JTBD、MVP、用户画像、PRD……</p><p>但如果你仔细看它们的本质，会发现一个共同点：</p><p><strong>它们都在解决同一个问题——如何把模糊的想法变成清晰的定义。</strong></p><table tabindex="0"><thead><tr><th>思维工具</th><th>表面看是</th><th>本质是</th></tr></thead><tbody><tr><td>JTBD思维</td><td>理解用户需求</td><td>搞清楚「我要完成什么任务」</td></tr><tr><td>逆向思维</td><td>预防产品失败</td><td>提前想清楚「什么会出错」</td></tr><tr><td>减法思维</td><td>砍掉不必要的功能</td><td>识别「什么是真正重要的」</td></tr><tr><td>故事思维</td><td>设计用户旅程</td><td>描述「谁在什么情况下做什么」</td></tr><tr><td>灵魂三问</td><td>验证产品方向</td><td>确认「问题定义是否清晰」</td></tr></tbody></table><p><strong>「定义问题」这个能力，不管你做什么都需要。</strong></p><p>你做数据分析，需要定义「这个分析要回答什么问题」。 你写自动化脚本，需要定义「这个脚本要解决什么重复劳动」。 你给自己做工具，需要定义「我真正的痛点是什么」。 你给家人做网页，需要定义「他们会在什么场景下使用」。</p><h2 id="一个贯穿示例-同一个人-四种场景" tabindex="-1">一个贯穿示例：同一个人，四种场景 <a class="header-anchor" href="#一个贯穿示例-同一个人-四种场景" aria-label="Permalink to &quot;一个贯穿示例：同一个人，四种场景&quot;">​</a></h2><p>让我们用一个虚构人物「小王」来说明，同一套思维工具如何应用于不同场景。</p><p><strong>小王的背景</strong>：28岁，在一家电商公司做运营，会用 Excel，不会写代码。最近开始尝试用 AI 编程工具。</p><h3 id="场景-a-小王要做一份数据分析" tabindex="-1">场景 A：小王要做一份数据分析 <a class="header-anchor" href="#场景-a-小王要做一份数据分析" aria-label="Permalink to &quot;场景 A：小王要做一份数据分析&quot;">​</a></h3><p><strong>情况</strong>：老板要求小王分析「为什么上个月退货率上升了」。</p><p><strong>没有思维工具时</strong>，小王可能会这样告诉 AI：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>帮我分析一下这份退货数据</span></span></code></pre></div><p>AI 会生成一堆图表，但小王不知道该看哪个，也不知道怎么向老板汇报。</p><p><strong>用了思维工具后</strong>，小王会先问自己：</p><table tabindex="0"><thead><tr><th>问题</th><th>小王的回答</th></tr></thead><tbody><tr><td>谁要看这个分析？（灵魂三问）</td><td>老板，他需要在周会上汇报给CEO</td></tr><tr><td>他们要做什么决策？（JTBD思维）</td><td>决定是否调整退货政策</td></tr><tr><td>什么会让这个分析没用？（逆向思维）</td><td>只说「退货率上升了」但不说原因</td></tr><tr><td>最核心的问题是什么？（减法思维）</td><td>退货率上升的主要原因是什么？</td></tr></tbody></table><p>然后小王会这样告诉 AI：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>我是电商运营，老板要在周会上向CEO汇报「上月退货率上升原因」。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>核心问题：退货率上升的主要原因是什么？</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>需要的分析：</span></span>
+<span class="line"><span>1. 按商品类别分析，哪类退货最多</span></span>
+<span class="line"><span>2. 按退货原因分析，最常见的3个原因</span></span>
+<span class="line"><span>3. 对比上月和上上月，变化最大的指标</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>输出要求：3张图表，每张配一句结论，最后给出2-3个可能的原因假设。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>数据在这里：[上传Excel]</span></span></code></pre></div><h3 id="场景-b-小王要写一个自动化脚本" tabindex="-1">场景 B：小王要写一个自动化脚本 <a class="header-anchor" href="#场景-b-小王要写一个自动化脚本" aria-label="Permalink to &quot;场景 B：小王要写一个自动化脚本&quot;">​</a></h3><p><strong>情况</strong>：小王每天早上要从5个平台下载销售数据，手动汇总到一张表里，花费约40分钟。</p><p><strong>没有思维工具时</strong>，小王可能会这样告诉 AI：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>帮我写一个Python脚本，自动汇总销售数据</span></span></code></pre></div><p>AI 会问「数据从哪里来」「格式是什么」，小王答不上来，项目就卡住了。</p><p><strong>用了思维工具后</strong>，小王会先评估：</p><table tabindex="0"><thead><tr><th>问题</th><th>小王的回答</th></tr></thead><tbody><tr><td>这个任务多久做一次？（频率）</td><td>每天</td></tr><tr><td>每次花多少时间？（耗时）</td><td>40分钟</td></tr><tr><td>步骤是否固定？（规则性）</td><td>是，每天都一样</td></tr><tr><td>什么情况下会出错？（逆向思维）</td><td>某个平台改版了、文件格式变了</td></tr><tr><td>先自动化哪一步？（减法思维）</td><td>先做「合并5个Excel」，下载暂时手动</td></tr></tbody></table><p>然后小王会这样告诉 AI：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>我的重复任务：每天早上从5个平台下载销售数据Excel，手动合并到一张汇总表。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>目前我的工作流程：</span></span>
+<span class="line"><span>1. 手动下载5个Excel（暂时不自动化）</span></span>
+<span class="line"><span>2. 打开每个Excel，复制「日期」「商品名」「销量」「金额」这四列</span></span>
+<span class="line"><span>3. 粘贴到汇总表</span></span>
+<span class="line"><span>4. 按日期排序</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>希望自动化的部分：</span></span>
+<span class="line"><span>第2-4步，把5个Excel合并成一个汇总表。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>文件说明：</span></span>
+<span class="line"><span>- 5个Excel都放在 D:\\销售数据\\每日\\ 文件夹</span></span>
+<span class="line"><span>- 文件名格式：平台名_日期.xlsx（如 淘宝_20241201.xlsx）</span></span>
+<span class="line"><span>- 每个文件的数据在Sheet1，第一行是表头</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>请帮我写一个Python脚本，实现自动合并。</span></span></code></pre></div><h3 id="场景-c-小王要给自己做一个小工具" tabindex="-1">场景 C：小王要给自己做一个小工具 <a class="header-anchor" href="#场景-c-小王要给自己做一个小工具" aria-label="Permalink to &quot;场景 C：小王要给自己做一个小工具&quot;">​</a></h3><p><strong>情况</strong>：小王想做一个「每日复盘」小工具，记录每天做了什么、学到什么。</p><p><strong>没有思维工具时</strong>，小王可能会想：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>我要做一个复盘工具，要有：</span></span>
+<span class="line"><span>- 每日记录</span></span>
+<span class="line"><span>- 周报生成</span></span>
+<span class="line"><span>- 月度统计</span></span>
+<span class="line"><span>- 标签分类</span></span>
+<span class="line"><span>- 搜索功能</span></span>
+<span class="line"><span>- 数据导出</span></span>
+<span class="line"><span>- 图表可视化</span></span>
+<span class="line"><span>……</span></span></code></pre></div><p>然后这个项目永远做不完。</p><p><strong>用了思维工具后</strong>，小王会先问自己：</p><table tabindex="0"><thead><tr><th>问题</th><th>小王的回答</th></tr></thead><tbody><tr><td>我真正的痛点是什么？（灵魂三问）</td><td>每天忙完不知道时间花在哪了，第二天又重复同样的错误</td></tr><tr><td>我会在什么场景下用？（故事思维）</td><td>晚上睡前，躺在床上用手机，花2分钟记一下</td></tr><tr><td>什么功能是第一天就必须有的？（减法思维）</td><td>能快速记录「今天做了什么」「明天要改进什么」</td></tr><tr><td>什么会让我做完就不用？（逆向思维）</td><td>太复杂、打开慢、需要填很多东西</td></tr></tbody></table><p>然后小王会这样告诉 AI：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>我要做一个极简每日复盘网页。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>使用场景：</span></span>
+<span class="line"><span>- 晚上睡前用手机打开</span></span>
+<span class="line"><span>- 2分钟内完成记录</span></span>
+<span class="line"><span>- 不需要登录</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>核心功能（只需要这些）：</span></span>
+<span class="line"><span>1. 两个输入框：「今天做了什么」「明天要改进什么」</span></span>
+<span class="line"><span>2. 一个保存按钮</span></span>
+<span class="line"><span>3. 能看到最近7天的记录</span></span>
+<span class="line"><span>4. 数据保存在浏览器本地</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>不需要的功能：</span></span>
+<span class="line"><span>- 不需要标签分类</span></span>
+<span class="line"><span>- 不需要搜索</span></span>
+<span class="line"><span>- 不需要统计图表</span></span>
+<span class="line"><span>- 不需要导出</span></span></code></pre></div><h3 id="场景-d-小王要给爸妈做一个工具" tabindex="-1">场景 D：小王要给爸妈做一个工具 <a class="header-anchor" href="#场景-d-小王要给爸妈做一个工具" aria-label="Permalink to &quot;场景 D：小王要给爸妈做一个工具&quot;">​</a></h3><p><strong>情况</strong>：小王的妈妈60岁，经常忘记和老朋友视频聊天的时间。</p><p><strong>没有思维工具时</strong>，小王可能会做一个功能很全的「日程管理App」——但妈妈根本不会用。</p><p><strong>用了思维工具后</strong>，小王会先观察和询问：</p><table tabindex="0"><thead><tr><th>问题</th><th>小王的回答</th></tr></thead><tbody><tr><td>妈妈是谁？技术水平如何？（故事思维）</td><td>60岁，只会用微信，不会装App</td></tr><tr><td>她的真实痛点是什么？（灵魂三问）</td><td>不是「管理日程」，而是「记住周三下午3点要和李阿姨视频」</td></tr><tr><td>什么会让她用不了？（逆向思维）</td><td>字太小、步骤太多、需要登录</td></tr><tr><td>她会在什么场景下用？（故事思维）</td><td>周三下午，提前看一眼今天要做什么</td></tr></tbody></table><p>然后小王会这样告诉 AI：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>我要给我妈做一个「今日提醒」网页。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>用户情况：</span></span>
+<span class="line"><span>- 60岁，只会用微信</span></span>
+<span class="line"><span>- 不会安装App，但会打开微信里的链接</span></span>
+<span class="line"><span>- 视力一般，需要大字</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>使用场景：</span></span>
+<span class="line"><span>- 我把网页链接发到家庭群</span></span>
+<span class="line"><span>- 妈妈点开就能看到「今天要做什么」</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>核心功能（只需要这些）：</span></span>
+<span class="line"><span>1. 大字显示「今天是星期X」</span></span>
+<span class="line"><span>2. 显示今天的提醒事项（如「下午3点和李阿姨视频」）</span></span>
+<span class="line"><span>3. 我能远程帮她添加/修改提醒</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>设计要求：</span></span>
+<span class="line"><span>- 字体至少20px</span></span>
+<span class="line"><span>- 按钮要大，容易点到</span></span>
+<span class="line"><span>- 不需要登录</span></span>
+<span class="line"><span>- 页面打开就能看到信息，不需要任何操作</span></span></code></pre></div><h2 id="共性-都是在「定义问题」" tabindex="-1">共性：都是在「定义问题」 <a class="header-anchor" href="#共性-都是在「定义问题」" aria-label="Permalink to &quot;共性：都是在「定义问题」&quot;">​</a></h2><p>四个场景，表面上完全不同：</p><ul><li>场景A是数据分析</li><li>场景B是自动化脚本</li><li>场景C是个人工具</li><li>场景D是给家人做工具</li></ul><p>但用到的思维工具是完全一样的：</p><table tabindex="0"><thead><tr><th>步骤</th><th>思维工具</th><th>在四个场景中都在问</th></tr></thead><tbody><tr><td>第一步</td><td>JTBD + 灵魂三问</td><td>这个东西要帮谁完成什么任务？</td></tr><tr><td>第二步</td><td>故事思维</td><td>在什么场景下使用？</td></tr><tr><td>第三步</td><td>逆向思维</td><td>什么情况下会失败/出错/用不了？</td></tr><tr><td>第四步</td><td>减法思维</td><td>最核心的功能是什么？先做哪个？</td></tr></tbody></table><p><strong>思维工具是「操作系统」，场景只是「应用程序」。</strong></p><p>掌握了思维工具，你就能应对任何场景。</p><h2 id="接下来" tabindex="-1">接下来 <a class="header-anchor" href="#接下来" aria-label="Permalink to &quot;接下来&quot;">​</a></h2><p>在接下来的四个小节，我们会逐一深入每个场景：</p><ul><li>场景特有的挑战是什么</li><li>思维工具具体怎么用</li><li>完整的 Prompt 模板</li><li>常见误区和避坑指南</li></ul><p>让我们从「数据分析场景」开始。</p>`,56)])])}const g=a(e,[["render",l]]);export{b as __pageData,g as default};

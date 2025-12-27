@@ -1,0 +1,74 @@
+import{_ as a,c as i,o as n,a3 as t}from"./chunks/framework.CUcrqFol.js";const c=JSON.parse('{"title":"5.1.5 怎么和 AI 好好说话——Prompt 工程核心原则","description":"5.1.5 怎么和 AI 好好说话——Prompt 工程核心原则 一句话破题 好的 Prompt 三要素：**清晰**（AI 能理解）、**具体**（减少歧义）、**结构化**（便于执行）。 核心原则 原则一：清晰表达意图 原则二：提供充足上下文 原则三：明确约束条件 Prompt 结构模板 一个完整的开发类 Prom","frontmatter":{"title":"5.1.5 怎么和 AI 好好说话——Prompt 工程核心原则","typora-root-url":"../../public"},"headers":[],"relativePath":"Advanced-old/05-product/5.1-ai-product-dev/5.1.5-prompting.md","filePath":"Advanced-old/05-product/5.1-ai-product-dev/5.1.5-prompting.md","lastUpdated":1766168364000}'),p={name:"Advanced-old/05-product/5.1-ai-product-dev/5.1.5-prompting.md"};function l(e,s,h,k,o,d){return n(),i("div",null,[...s[0]||(s[0]=[t(`<h1 id="_5-1-5-怎么和-ai-好好说话——prompt-工程核心原则" tabindex="-1">5.1.5 怎么和 AI 好好说话——Prompt 工程核心原则 <a class="header-anchor" href="#_5-1-5-怎么和-ai-好好说话——prompt-工程核心原则" aria-label="Permalink to &quot;5.1.5 怎么和 AI 好好说话——Prompt 工程核心原则&quot;">​</a></h1><h3 id="一句话破题" tabindex="-1">一句话破题 <a class="header-anchor" href="#一句话破题" aria-label="Permalink to &quot;一句话破题&quot;">​</a></h3><p>好的 Prompt 三要素：<strong>清晰</strong>（AI 能理解）、<strong>具体</strong>（减少歧义）、<strong>结构化</strong>（便于执行）。</p><h3 id="核心原则" tabindex="-1">核心原则 <a class="header-anchor" href="#核心原则" aria-label="Permalink to &quot;核心原则&quot;">​</a></h3><h4 id="原则一-清晰表达意图" tabindex="-1">原则一：清晰表达意图 <a class="header-anchor" href="#原则一-清晰表达意图" aria-label="Permalink to &quot;原则一：清晰表达意图&quot;">​</a></h4><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>❌ 模糊：&quot;帮我优化这个代码&quot;</span></span>
+<span class="line"><span>（优化什么？性能？可读性？安全性？）</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>✅ 清晰：&quot;这个函数运行太慢了，请优化性能，</span></span>
+<span class="line"><span>目前处理 1000 条数据需要 5 秒，希望降到 1 秒以内&quot;</span></span></code></pre></div><h4 id="原则二-提供充足上下文" tabindex="-1">原则二：提供充足上下文 <a class="header-anchor" href="#原则二-提供充足上下文" aria-label="Permalink to &quot;原则二：提供充足上下文&quot;">​</a></h4><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>❌ 缺乏上下文：&quot;写一个用户表&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>✅ 上下文完整：</span></span>
+<span class="line"><span>&quot;用 Prisma 写一个用户表：</span></span>
+<span class="line"><span>- 使用 PostgreSQL 数据库</span></span>
+<span class="line"><span>- 需要支持邮箱登录</span></span>
+<span class="line"><span>- 用户有基本信息（昵称、头像）</span></span>
+<span class="line"><span>- 需要记录创建和更新时间&quot;</span></span></code></pre></div><h4 id="原则三-明确约束条件" tabindex="-1">原则三：明确约束条件 <a class="header-anchor" href="#原则三-明确约束条件" aria-label="Permalink to &quot;原则三：明确约束条件&quot;">​</a></h4><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>❌ 无约束：&quot;做一个登录页面&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>✅ 有约束：</span></span>
+<span class="line"><span>&quot;做一个登录页面：</span></span>
+<span class="line"><span>- 使用 Next.js App Router</span></span>
+<span class="line"><span>- 样式用 Tailwind CSS</span></span>
+<span class="line"><span>- 需要表单验证（邮箱格式、密码长度 8-20）</span></span>
+<span class="line"><span>- 调用 /api/auth/login 接口&quot;</span></span></code></pre></div><h3 id="prompt-结构模板" tabindex="-1">Prompt 结构模板 <a class="header-anchor" href="#prompt-结构模板" aria-label="Permalink to &quot;Prompt 结构模板&quot;">​</a></h3><p>一个完整的开发类 Prompt 通常包含：</p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## 任务</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">一句话说明要做什么</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## 背景</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">相关的上下文信息</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## 技术约束</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> [</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">使用什么技术栈</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> [</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">需要遵循什么规范</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## 输入/输出</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 输入：[</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">接收什么数据</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 输出：[</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">返回什么结果</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## 示例</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">如果有的话，提供参考示例</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## 注意事项</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">容易出错的地方</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span></code></pre></div><h3 id="实战示例" tabindex="-1">实战示例 <a class="header-anchor" href="#实战示例" aria-label="Permalink to &quot;实战示例&quot;">​</a></h3><p><strong>需求</strong>：创建一个文章管理的 API</p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## 任务</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">创建文章 CRUD 的 API 路由</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## 背景</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">这是一个博客系统的后端接口，前端使用 React，</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">需要支持文章的创建、读取、更新和删除</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## 技术约束</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> Next.js 16 App Router</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 使用 Prisma ORM</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 数据库是 PostgreSQL</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 返回 JSON 格式</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## 接口定义</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> GET /api/posts - 获取文章列表（支持分页）</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> GET /api/posts/[</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">] - 获取单篇文章</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> POST /api/posts - 创建文章</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> PUT /api/posts/[</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">] - 更新文章</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> DELETE /api/posts/[</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">] - 删除文章</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## 数据结构</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">文章包含：id, title, content, authorId, </span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">createdAt, updatedAt</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## 注意事项</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 创建和更新需要验证必填字段</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 删除要返回 204 状态码</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 列表接口默认每页 10 条</span></span></code></pre></div><h3 id="常见误区" tabindex="-1">常见误区 <a class="header-anchor" href="#常见误区" aria-label="Permalink to &quot;常见误区&quot;">​</a></h3><p><strong>误区 1：一次说太多</strong></p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>❌ &quot;帮我做一个完整的博客系统，包括文章管理、用户系统、</span></span>
+<span class="line"><span>评论功能、搜索、RSS...&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>✅ 分步骤：先做文章 CRUD，验证通过后再加其他功能</span></span></code></pre></div><p><strong>误区 2：期望 AI 读心</strong></p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>❌ &quot;按照通常的做法来就行&quot;</span></span>
+<span class="line"><span>（AI 不知道你认为的&quot;通常&quot;是什么）</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>✅ 明确指定：使用 RESTful 风格，遵循项目现有的代码规范</span></span></code></pre></div><p><strong>误区 3：不给反馈</strong></p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>❌ 收到代码后直接使用，发现问题才说&quot;你给的不对&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>✅ 收到代码后检查，具体说明哪里不符合预期：</span></span>
+<span class="line"><span>&quot;创建文章时，如果标题为空应该返回 400 错误，</span></span>
+<span class="line"><span>但现在返回的是 500&quot;</span></span></code></pre></div><h3 id="提升-prompt-质量的技巧" tabindex="-1">提升 Prompt 质量的技巧 <a class="header-anchor" href="#提升-prompt-质量的技巧" aria-label="Permalink to &quot;提升 Prompt 质量的技巧&quot;">​</a></h3><ol><li><strong>先写后审</strong>：写完 Prompt 先读一遍，看自己是否能理解</li><li><strong>假设 AI 是新人</strong>：把 AI 当作刚入职的同事，需要详细说明背景</li><li><strong>提供示例</strong>：能给代码示例就给，AI 从示例中学习最快</li><li><strong>迭代优化</strong>：第一次不完美很正常，根据结果调整 Prompt</li></ol>`,25)])])}const g=a(p,[["render",l]]);export{c as __pageData,g as default};

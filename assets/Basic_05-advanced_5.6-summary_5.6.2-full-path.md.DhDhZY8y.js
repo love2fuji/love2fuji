@@ -1,0 +1,42 @@
+import{_ as s,c as n,o as t,a3 as p}from"./chunks/framework.CUcrqFol.js";const u=JSON.parse('{"title":"5.6.2 基础版完整学习路径","description":"5.6.2 基础版完整学习路径回顾 经过本节阅读，你将获得： 从第一章到第五章的完整技能习得路径 每章对应的里程碑成就 你在 AI 编程浪潮中的位置 你走过的路 技能习得里程碑 每一章都是一个里程碑，让我们看看你具体获得了什么： | 章节 | 里程碑 | 你获得的能力 | |------|--------|------","frontmatter":{"title":"5.6.2 基础版完整学习路径","order":3},"headers":[],"relativePath":"Basic/05-advanced/5.6-summary/5.6.2-full-path.md","filePath":"Basic/05-advanced/5.6-summary/5.6.2-full-path.md","lastUpdated":1765094268000}'),l={name:"Basic/05-advanced/5.6-summary/5.6.2-full-path.md"};function e(d,a,i,o,r,c){return t(),n("div",null,[...a[0]||(a[0]=[p(`<h1 id="_5-6-2-基础版完整学习路径回顾" tabindex="-1">5.6.2 基础版完整学习路径回顾 <a class="header-anchor" href="#_5-6-2-基础版完整学习路径回顾" aria-label="Permalink to &quot;5.6.2 基础版完整学习路径回顾&quot;">​</a></h1><p>经过本节阅读，你将获得：</p><ul><li>从第一章到第五章的完整技能习得路径</li><li>每章对应的里程碑成就</li><li>你在 AI 编程浪潮中的位置</li></ul><h2 id="你走过的路" tabindex="-1">你走过的路 <a class="header-anchor" href="#你走过的路" aria-label="Permalink to &quot;你走过的路&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>基础版学习之旅</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>├── 第一章：觉醒</span></span>
+<span class="line"><span>│   ├── 理解：什么是 Vibe Coding</span></span>
+<span class="line"><span>│   ├── 破除：编程很难的迷思</span></span>
+<span class="line"><span>│   ├── 选择：适合自己的 AI 编程工具</span></span>
+<span class="line"><span>│   └── 完成：第一个 3 分钟 AI 网页</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>├── 第二章：心法</span></span>
+<span class="line"><span>│   ├── 掌握：JTBD 用户需求框架</span></span>
+<span class="line"><span>│   ├── 学会：MVP 最小可行产品思维</span></span>
+<span class="line"><span>│   ├── 运用：灵魂三问定义项目</span></span>
+<span class="line"><span>│   └── 完成：待办清单的需求规划</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>├── 第三章：技法</span></span>
+<span class="line"><span>│   ├── 理解：Context is King 原则</span></span>
+<span class="line"><span>│   ├── 掌握：S.C.A.F.F. 提示词框架</span></span>
+<span class="line"><span>│   ├── 学会：迭代对话的技巧</span></span>
+<span class="line"><span>│   └── 完成：第一份 PRD 文档</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>├── 第四章：实战</span></span>
+<span class="line"><span>│   ├── 搭建：页面框架（静态层）</span></span>
+<span class="line"><span>│   ├── 实现：增删改查（交互层）</span></span>
+<span class="line"><span>│   ├── 添加：本地存储（存储层）</span></span>
+<span class="line"><span>│   └── 完成：可运行的待办清单应用</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>└── 第五章：精进</span></span>
+<span class="line"><span>    ├── 保护：代码版本管理</span></span>
+<span class="line"><span>    ├── 发布：部署到互联网</span></span>
+<span class="line"><span>    ├── 防护：安全意识建立</span></span>
+<span class="line"><span>    ├── 进化：持续迭代能力</span></span>
+<span class="line"><span>    └── 认知：能力边界清晰</span></span></code></pre></div><h2 id="技能习得里程碑" tabindex="-1">技能习得里程碑 <a class="header-anchor" href="#技能习得里程碑" aria-label="Permalink to &quot;技能习得里程碑&quot;">​</a></h2><p>每一章都是一个里程碑，让我们看看你具体获得了什么：</p><table tabindex="0"><thead><tr><th>章节</th><th>里程碑</th><th>你获得的能力</th></tr></thead><tbody><tr><td>第一章</td><td>Hello World</td><td>从零到一的突破，证明&quot;我也能做&quot;</td></tr><tr><td>第二章</td><td>需求文档</td><td>想清楚再动手，避免&quot;做着做着不知道要什么&quot;</td></tr><tr><td>第三章</td><td>高效沟通</td><td>让 AI 真正理解你，不再&quot;鸡同鸭讲&quot;</td></tr><tr><td>第四章</td><td>完整作品</td><td>亲手做出可运行的应用，建立真正的信心</td></tr><tr><td>第五章</td><td>上线分享</td><td>让全世界都能访问，从&quot;学习者&quot;变成&quot;创造者&quot;</td></tr></tbody></table><h2 id="从消费者到创造者的转变" tabindex="-1">从消费者到创造者的转变 <a class="header-anchor" href="#从消费者到创造者的转变" aria-label="Permalink to &quot;从消费者到创造者的转变&quot;">​</a></h2><p>回顾你的起点和现在：</p><table tabindex="0"><thead><tr><th>维度</th><th>学习前</th><th>学习后</th></tr></thead><tbody><tr><td><strong>心态</strong></td><td>&quot;编程太难了，我不行&quot;</td><td>&quot;说清楚需求，AI 帮我实现&quot;</td></tr><tr><td><strong>能力</strong></td><td>只能用别人做的东西</td><td>能做出自己想要的工具</td></tr><tr><td><strong>视角</strong></td><td>作为用户抱怨功能不好</td><td>作为创造者思考如何改进</td></tr><tr><td><strong>工具</strong></td><td>手动处理重复劳动</td><td>让 AI 帮我自动化</td></tr><tr><td><strong>成果</strong></td><td>想法停留在脑子里</td><td>想法变成可运行的作品</td></tr></tbody></table><h2 id="你在行业中的位置" tabindex="-1">你在行业中的位置 <a class="header-anchor" href="#你在行业中的位置" aria-label="Permalink to &quot;你在行业中的位置&quot;">​</a></h2><p>根据 2025 年的行业数据，你现在的位置是：</p><blockquote><p>根据 Stack Overflow 2025 开发者调查，<strong>84% 的开发者正在使用或计划使用 AI 编程工具</strong>。</p><p>你已经是这 84% 中的一员。</p></blockquote><p>更重要的是：</p><table tabindex="0"><thead><tr><th>数据</th><th>来源</th><th>你的位置</th></tr></thead><tbody><tr><td>到 2025 年，70% 的新应用将使用低代码/无代码技术</td><td>Gartner 预测</td><td>你已经掌握了这种能力</td></tr><tr><td>公民开发者与专业开发者的比例将达到 4:1</td><td>Hostinger 2025 报告</td><td>你已经是&quot;公民开发者&quot;</td></tr><tr><td>AI 辅助编程可节省 30-75% 的开发时间</td><td>Second Talent 2025 统计</td><td>你已经开始享受这个红利</td></tr></tbody></table><p>**&quot;公民开发者&quot;**指的是非专业程序员背景，但能使用工具创建应用的人。这是一个正在快速增长的群体，而你已经是其中一员。</p><h2 id="基础版在整个学习体系中的位置" tabindex="-1">基础版在整个学习体系中的位置 <a class="header-anchor" href="#基础版在整个学习体系中的位置" aria-label="Permalink to &quot;基础版在整个学习体系中的位置&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>Vibe Coding 学习体系</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>├── 基础版（你现在的位置）← 你在这里</span></span>
+<span class="line"><span>│   ├── 目标：能做出个人工具并上线</span></span>
+<span class="line"><span>│   ├── 技术栈：HTML + CSS + JS + localStorage</span></span>
+<span class="line"><span>│   └── 产出：静态网站、个人工具</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>└── 进阶版（下一步可选）</span></span>
+<span class="line"><span>    ├── 目标：能做需要后端的完整应用</span></span>
+<span class="line"><span>    ├── 技术栈：Next.js + TypeScript + 数据库</span></span>
+<span class="line"><span>    └── 产出：多用户应用、全栈项目</span></span></code></pre></div><h2 id="这是一个了不起的跨越" tabindex="-1">这是一个了不起的跨越 <a class="header-anchor" href="#这是一个了不起的跨越" aria-label="Permalink to &quot;这是一个了不起的跨越&quot;">​</a></h2><p>从对编程一无所知，到能够独立做出一个可以上线、可以分享的工具。</p><p>这个跨越的价值在于：</p><ol><li><strong>证明了可能性</strong>：你不再是&quot;想学编程的人&quot;，而是&quot;做过项目的人&quot;</li><li><strong>建立了方法论</strong>：你知道从想法到作品的完整流程</li><li><strong>培养了习惯</strong>：版本管理、安全意识、迭代思维</li><li><strong>打开了大门</strong>：无论是继续深入学习，还是用现有能力创造价值，路都在脚下</li></ol><h2 id="本节要点" tabindex="-1">本节要点 <a class="header-anchor" href="#本节要点" aria-label="Permalink to &quot;本节要点&quot;">​</a></h2><ul><li>基础版五章形成完整的能力闭环：觉醒→心法→技法→实战→精进</li><li>每一章都是一个里程碑，都有具体的能力产出</li><li>你已经完成了从&quot;消费者&quot;到&quot;创造者&quot;的身份转变</li><li>在 AI 编程的浪潮中，你已经站在了正确的位置</li></ul><p>→ <a href="./5.6.3-what-you-can-do.html">5.6.3 你现在能做什么</a></p>`,26)])])}const b=s(l,[["render",e]]);export{u as __pageData,b as default};
